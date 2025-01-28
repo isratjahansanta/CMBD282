@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Reservation Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-purple-200 flex justify-center items-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg">
+      <h2 class="text-2xl font-bold mb-4 text-center">
+        Restaurant Reservation Form
+      </h2>
+      <form
+        action="https://formspree.io/f/mqaeqqbp"
+        method="POST"
+        class="space-y-4"
+      >
+        <div class="flex gap-4">
+          <input
+            type="text"
+            name="first_name"
+            placeholder="First"
+            required
+            class="w-1/2 p-2 border border-gray-300 rounded"
+          />
+          <input
+            type="text"
+            name="last_name"
+            placeholder="Last"
+            required
+            class="w-1/2 p-2 border border-gray-300 rounded"
+          />
+        </div>
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+          class="w-full p-2 border border-gray-300 rounded"
+        />
+
+        <input
+          type="tel"
+          name="phone"
+          placeholder="### ### ####"
+          required
+          class="w-full p-2 border border-gray-300 rounded"
+        />
+
+        <div class="flex gap-4">
+          <input
+            type="date"
+            name="reservation_date"
+            required
+            class="w-1/2 p-2 border border-gray-300 rounded"
+          />
+          <input
+            type="time"
+            name="reservation_time"
+            required
+            class="w-1/2 p-2 border border-gray-300 rounded"
+          />
+        </div>
+
+        <input
+          type="number"
+          name="guest_count"
+          placeholder="How many persons?"
+          required
+          class="w-full p-2 border border-gray-300 rounded"
+        />
+
+        <textarea
+          name="notes"
+          placeholder="Notes"
+          rows="3"
+          class="w-full p-2 border border-gray-300 rounded"
+        ></textarea>
+
+        <button
+          type="submit"
+          class="w-full bg-purple-500 text-white p-2 rounded-lg hover:bg-purple-600"
+        >
+          SEND
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
